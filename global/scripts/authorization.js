@@ -15,24 +15,7 @@ if (loginBtn) {
   loginBtn.addEventListener("click", createAuthHandler(loginUsername, loginPassword, loginUser));
 }
 if (registerBtn) {
-  registerBtn.addEventListener( "click", createAuthHandler(regUsername, regPassword, registerUser));
-}
-function createAuthHandler(usernameInput, passwordInput, onSuccessCallback) {
-  return function () {
-    const username = ((usernameInput && usernameInput.value) || "").trim();
-    const password = ((passwordInput && passwordInput.value) || "").trim();
-    if (!username) {
-      alert("Please enter username");
-      if (usernameInput) usernameInput.focus();
-      return;
-    }
-    if (!password) {
-      alert("Please enter password");
-      if (passwordInput) passwordInput.focus();
-      return;
-    }
-    onSuccessCallback(username, password);
-  };
+  registerBtn.addEventListener("click", createAuthHandler(regUsername, regPassword, registerUser));
 }
 function handleSuccessfulAuth() {
   localStorage.setItem(STORAGE_KEY, "true");
@@ -48,12 +31,14 @@ function loginUser(username) {
 }
 function checkInitialAuthState() {
   const isLoggedIn = localStorage.getItem(STORAGE_KEY);
+
   if (isLoggedIn === "true") {
     showAuth(false);
   } else {
     showAuth(true);
-  } 
+  }
 }
+
 if (logoutBtn) {
   logoutBtn.addEventListener("click", function () {
     localStorage.removeItem(STORAGE_KEY);
@@ -61,6 +46,7 @@ if (logoutBtn) {
     window.location.reload();
   });
 }
+
 function showAuth(show) {
   if (show) {
     authBlock.classList.add("active");

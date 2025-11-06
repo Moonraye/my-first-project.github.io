@@ -1,6 +1,7 @@
 function initializeFormChooser(){    
     const allForms = document.querySelectorAll('.form-container');
     const formChooser = document.querySelectorAll('.form-chooser');
+
     function chooseForm(event) {
         const clicked = event.currentTarget;
         const formID = clicked.getAttribute('data-tab');

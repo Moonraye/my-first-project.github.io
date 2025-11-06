@@ -3,5 +3,5 @@ initializeTabs();
 initializeCookie();
 initializeAccordion();
 textareaCurrentCounter();
+initializeDropMenu();
 
-  

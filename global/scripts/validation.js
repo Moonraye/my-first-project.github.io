@@ -2,6 +2,7 @@ function createAuthHandler(usernameInput, passwordInput, onSuccessCallback) {
     return function () {
         const username = ((usernameInput && usernameInput.value) || "").trim();
         const password = ((passwordInput && passwordInput.value) || "").trim();
+
         if (!username) {
             alert("Please enter username");
             if (usernameInput) usernameInput.focus();

@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="lesson 4/style/style.css" />
-    <link rel="stylesheet" href="lesson 4/style/tabs-style.css">
-    <link rel="stylesheet" href="lesson 4/style/auth-form-style.css">
-    <link rel="stylesheet" href="lesson 4/style/cookie-style.css">
-    <link rel="stylesheet" href="lesson 4/style/textarea-style.css">
-    <link rel="stylesheet" href="lesson 4/style/accordion-style.css">
-    <link rel="stylesheet" href="lesson 4/style/dropdown-style.css">
+    <link rel="stylesheet" href="/global/style/style.css" />
+    <link rel="stylesheet" href="/global/style/tabs-style.css">
+    <link rel="stylesheet" href="/global/style/auth-form-style.css">
+    <link rel="stylesheet" href="/global/style/cookie-style.css">
+    <link rel="stylesheet" href="/global/style/textarea-style.css">
+    <link rel="stylesheet" href="/global/style/accordion-style.css">
+    <link rel="stylesheet" href="/global/style/drop-down-menu.css">
     <title>Doc</title>
 </head>
+
 <body>
     <div class="main-container">
         <div class="content-block authorization active" data-tab="block-1">
             <div id="form-1" class="login form-container active" data-tab="form-1">
                 <h2 class="authorization-title">Login Form</h2>
-                <span><button class="form-chooser to-registation" type="button"
-                        data-tab="form-2">Registration</button></span>
+                <span><button class="form-chooser to-registation" type="button" data-tab="form-2">Registration</button>
+                </span>
                 <form class="authorization-form">
                     <label for="login-username">Email: </label>
                     <input type="email" id="login-username" name="login-username" required />
@@ -29,7 +31,9 @@
             </div>
             <div id="form-2" class="registration form-container" data-tab="form-2">
                 <h2 class="authorization-title">Registration Form</h2>
-                <span><button class="form-chooser to-login" type="button" data-tab="form-1">Login</button></span>
+                <span>
+                    <button class="form-chooser to-login" type="button" data-tab="form-1">Login</button>
+                </span>
                 <form class="authorization-form">
                     <label for="reg-username">Email:</label>
                     <input type="email" id="reg-username" name="reg-username" required />
@@ -40,7 +44,9 @@
             </div>
         </div>
         <div class="content-block tabs-container" data-tab="block-2">
-            <span><button class="logout-btn" type="button">Log Out</button></span>
+            <span>
+                <button class="logout-btn" type="button">Log Out</button>
+            </span>
             <div class="tabs-nav">
                 <button class="tab-link active" data-tab="tab-1">First Tab</button>
                 <button class="tab-link" data-tab="tab-2">Second Tab</button>
@@ -89,41 +95,22 @@
                     </div>
                 </div>
                 <div id="tab-4" class="tab-panel">
-                    <div class=".drop-container">
-                        <div class="drop-item">
-                            <span class="drop-header">Lorem</span>
-                            <div class="drop-list">
-                                <ul>
-                                    <li>Ipsum</li>
-                                    <li>Apple</li>
-                                    <li>Math</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="drop-item">
-                            <span class="drop-header">Ipsoom</span>
-                            <div class="drop-list">
-                                <ul>
-                                    <li>Ipsum</li>
-                                    <li>Apple</li>
-                                    <li>Math</li>
-                                    <li>Orange</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="drop-item">
-                            <span class="drop-header">Spain</span>
-                            <div class="drop-list">
-                                <ul>
-                                    <li>Ipsum</li>
-                                    <li>Apple</li>
-                                </ul>
-                            </div>
+                    <div class="drop-container">
+                        <div class="drop-list">
+                            <p>Choose the option: </p>
+                            <ul>
+                                <li data-tab="li-1">Lorem</li>
+                                <li data-tab="li-2">Ipsum</li>
+                                <li data-tab="li-3">Apple</li>
+                                <li data-tab="li-4">Math</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
     <div class="cookie-container hidden">
         <p class="cookie-text">
@@ -132,13 +119,15 @@
         </p>
         <button type="button" class="cookie-close-btn accept">Accept</button>
     </div>
-    <script src="lesson 4/scripts/validation.js"></script>
-    <script src="lesson 4/scripts/authorization.js"></script>
-    <script src="lesson 4/scripts/chooseAuthForm.js"></script>
-    <script src="lesson 4/scripts/tabs.js"></script>
-    <script src="lesson 4/scripts/cookieCheck.js"></script>
-    <script src="lesson 4/scripts/accordion.js"></script>
-    <script src="lesson 4/scripts/textarea.js"></script>
-    <script src="lesson 4/scripts/main.js"></script>
+    <script src="/global/scripts/validation.js"></script>
+    <script src="/global/scripts/authorization.js"></script>
+    <script src="/global/scripts/chooseAuthForm.js"></script>
+    <script src="/global/scripts/tabs.js"></script>
+    <script src="/global/scripts/cookieCheck.js"></script>
+    <script src="/global/scripts/accordion.js"></script>
+    <script src="/global/scripts/textarea.js"></script>
+    <script src="/global/scripts/dropMenu.js"></script>
+    <script src="/global/scripts/main.js"></script>
 </body>
+
 </html>

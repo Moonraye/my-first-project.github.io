@@ -1,0 +1,45 @@
+.drop-container{
+    display: flex; 
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 0 0 0 ;
+
+}
+.drop-list{
+    display: inline-block;
+    background-color: antiquewhite;
+    width: 25%;
+}
+.drop-list p{
+    text-align: center;
+}
+.drop-list p:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+.drop-list ul{ 
+    padding: 0;
+    display: none;
+}
+.drop-list ul.active{
+    display: block;
+}
+.drop-list ul li{
+    text-align: center;
+    margin: 20px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.drop-list ul li:hover{
+    text-decoration: underline;  
+}
+.drop-list > ul > li.chosen{
+    color: red;
+    text-decoration: underline;
+}
+.drop-list ul li.active{
+    display: block;
+}
+.tabs-content #tab-4{
+    height: 100%;
+}
